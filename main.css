@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.form-section, .search-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-section input, .form-section button, .search-container input {
+    margin: 5px 0;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+thead {
+    background-color: #28a745;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    margin: 5px 0;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.edit-btn, .delete-btn {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+    color: #dc3545;
+}
+
+.search-container {
+    width: 90%;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .container, .search-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h1, h2 {
+        font-size: 1.3rem;
+    }
+
+    .form-section input, .form-section button, .search-container input {
+        max-width: 100%;
+    }
+
+    table, th, td {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container, .search-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.1rem;
+    }
+
+    .form-section input, .form-section button, .search-container input {
+        padding: 8px;
+    }
+
+    table, th, td {
+        font-size: 0.7rem;
+        padding: 5px;
+    }
+
+    button {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 320px) {
+    h1, h2 {
+        font-size: 1rem;
+    }
+
+    .form-section input, .form-section button, .search-container input {
+        padding: 5px;
+        font-size: 0.9rem;
+    }
+
+    table, th, td {
+        font-size: 0.6rem;
+        padding: 3px;
+    }
+
+    button {
+        padding: 5px;
+        font-size: 0.9rem;
+    }
+}

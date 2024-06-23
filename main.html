@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Table</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Custom Table</h1>
+        <div class="form-section">
+            <h2>Add item</h2>
+            <input type="text" id="name" placeholder="Enter Name">
+            <input type="text" id="category" placeholder="Enter Category">
+            <input type="text" id="year" placeholder="Enter Year">
+            <button onclick="addItem()">Add Item</button>
+        </div>
+    </div>
+    <div class="search-container">
+        <h2>Search for Item...</h2>
+        <input type="text" id="search" placeholder="Search for names.." onkeyup="searchItem()">
+    </div>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>S.no</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Year</th>
+                    <th>Edit Entry</th>
+                    <th>Delete Entry</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Table rows will be added dynamically here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
